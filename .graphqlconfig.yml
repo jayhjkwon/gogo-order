@@ -1,0 +1,15 @@
+projects:
+  gogobackend:
+    schemaPath: amplify/backend/api/gogobackend/build/schema.graphql
+    includes:
+      - graphql/**/*.ts
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: typescript
+        generatedFileName: API.ts
+        docsFilePath: graphql
+        region: ap-southeast-2
+        apiId: null
+        maxDepth: 4
